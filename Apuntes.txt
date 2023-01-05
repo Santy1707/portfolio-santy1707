@@ -1,0 +1,176 @@
+Bootstrap 
+
+Es un framework de CSS - Un conjunto de clases que permiten personalizar el estilo de los elementos HML de nuestro sitio web 
+
+Adaptable - Responsive 
+
+Se adapta a distintos dispositivos en base a su tamaño y orientación 
+
+3 pilares a usar de Bootstrap --> Grid - Componentes - Íconos 
+
+        --> La GRID de Bootstrap -- Cuadrícula - Define como se van a presentar los elementos en la página 
+        --> Conjunto de Contenedores, filas y columnas que definen cómo se va a presentar y a alinear el contenido 
+        --> Cada fila en Bootstrap tiene 12 columnas 
+
+Clases para la grid 
+
+.row - significa fila en español 
+<div class="row"> 
+    este div ahora actua como una fila  
+</div>
+
+Estas clases sirven para determinar la forma de las columnas en la fila 
+
+.col- Columna 
+.col-sm- 
+.col-md- 
+col-lg- 
+.col-xl-        
+
+                PARA DIMENSIONES DEL DISPOSITIVO        clase  
+                xs -- Extra small  < 576px              .col 
+                sm -- small >= 576px                    .col-sm- 
+                md -- medium >= 768px                   .col-md- 
+                lg -- large >= 992px                    .col-lg-
+                xl -- extra large >= 1200px             .col-xl-
+                xxl -- extra extra large >= 1400px      .col-xxl-
+
+                EL ANCHO DE LA VENTANA DEL DISPOSITIVO SE LLAMA VIEWPORT 
+
+CADA UNA DE LAS DIMENSIONES ANTERIORES SON UN BREAKPOINT -- Bootstrap tiene los 6 BREAKPOINTs anteriores 
+
+Dimensión (ancho) a partir de la cual podemos cambiar el estilo o la estructura de la página web 
+
+Estructura de la GRID 
+
+Un CONTENEDOR puede contener FILAS y cada fila contiene 12 COLUMNAS 
+
+Es un elemento HTML que contiene toda esa estructura de filas o columnas o elementos HTML que queramos usar 
+            .container --> Crea un contenedor responsivo con un ancho máxumo fijo que depende del tamaño del dispositivo 
+            .container-fluid --> Crea un contenedor responsivo que cubre el 100% del ancho de la ventana 
+
+EMPECEMOS CON Bootstrap 
+Lo ponemos en el head, podemos usar un CDN --> Content Delivery Network (nos permite descargar los archivos para tenerlos en la página web) 
+sin que sean locales, es decir, se van a descargar al acceder a la página 
+
+CONTENEDORES RESPONSIVOS 
+            .container-sm 
+            .container-md
+            .container-lg  --> antes de que llegue a la dimension lg va a cubrir el 100% del ancho de la ventana 
+            .container-xl --> Lo mismo pasa con todos los otros contenedores 
+            .container-xxl --> Luego de llegar a ese punto se convierten en contenedores de ancho máximo 
+
+Crea un contenedor responsivo que cubre el 100% del ancho de la ventana hata que llega a las dimensiones de ese breakpoint 
+
+Sigamos con la estructura de la grid 
+
+Los elementos de una fila pueden ocupar varias columnas 
+Las columnas de los elementos de una fila deben sumar 12 --> Para que esten ubicados en la misma linea 
+
+Si suman más de 12, las columnas adicionales se colocan en una línea nueva 
+
+
+Al crear una columna sin especificación de punto de quiebre, vamos a tener columnas distribuidas de forma equitativa 
+
+DIA 1, hasta aquí llegamos, 1:36:56 
+
+Para el día 2 veremos los componentes de Bootstrap 
+
+        Componentes de Bootstrap 
+
+Elemento HTML reutilizable que ya viene con un estilo predeterminado y que podemos usar en nuestra página web 
+En la documentación encontramos distintos componentes, por ejemplo, el acordeon 
+
+        Iconos de Bootstrap 
+
+Íconos SVG, Bootstrap Icons es una libreria donde encontramos más de 1500 
+
+
+
+FLEXBOX --> CSS Flexible Box Layout -- distribución flexible dentro de contenedores (cajas) flexibles, que de adapte y distribuya su contenido 
+
+Si fuera solo CSS 
+
+<div class='contenedor'>
+    Mi contenedor 
+</div>
+
+CSS 
+
+.contenedor{
+    display: flex
+}
+
+Ahora, en Bootstrap es más sencillo 
+
+<div class='d-flex'>
+    Mi contenedor 
+</div>
+
+Flex-direction 
+
+Establece el eje principal del contenedor, la dirección en la cual se van a color los elementos dentro del contenedor 
+
+Tenemos un eje principal y un eje secundario 
+
+                Propiedades 
+row - fila 
+row-reverse - fila reversada 
+column - columna
+column-reverse - columna reversada 
+
+Si es fila el eje principal es horizontal 
+Si es columna el eje principal es vertical 
+
+A partir de los ejes principales y secundario tenemos propiedades como:
+
+justify-content : Define como se distribuyen los elementos en el eje principal 
+            flex-start 
+            flex-end 
+            center 
+            space-between - espacio entre los elementos 
+            space-around - espacio alrededor de los elementos 
+            space-evenly - espacio distribuido equitativamente de los elementos 
+
+Ahora, en Bootstrap lo utilizamos de la siguiente manera 
+
+                                    .justify-content-start 
+                                    .justify-content-end 
+                                    .justify-content-center 
+                                    .justify-content-between 
+                                    .justify-content-around 
+                                    .justify-content-evenly 
+
+align-items : define como se distribuyen los elementos en el eje perpendicular (esta ubicado a 90 grados del eje principal) al eje principal (el eje secundario) 
+            flex-start 
+            flex-end 
+            center 
+            baseline 
+            stretch (estirar)
+
+Ahora, en Bootstrap lo utilizamos de la siguiente manera
+
+                                    .align-items-start
+                                    .align-items-end 
+                                    .align-items-center
+                                    .align-items-baseline 
+                                    .align-items-stretch
+
+flew-wrap : Determina si los elementos deben ser ajustados para que siempre estén en una misma 
+línea o si se les permite distribuirse en varias líneas si es necesario 
+
+flex-wrap: nowrap -- no se distribuyen sino que se hacen más angostos 
+flex-wrap: wrap -- no cambian el tamaño pero se reajustan, por ejemplo, uno sobre otro 
+flew-wrap: wrap-reverse -- redistribuidos pero en orden inverso 
+
+en Bootstrap tenemos: 
+
+
+                                    .flex-nowrap 
+                                    .flex-wrap
+                                    .flex-wrap-reverse 
+
+Media Query - le dice al navegador que estilo aplicar en determinados tamaños del dispositivo
+
+Quedamos en la hora 2:44 seguimos el Domingo, XD
+
