@@ -515,6 +515,7 @@ footer {
     }
 }
 
+
 @media screen and ( max-width: 400px ) {
     .overlay p {
         font-size: 8px;
