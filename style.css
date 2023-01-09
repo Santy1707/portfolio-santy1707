@@ -14,9 +14,9 @@
     display: block;
     white-space: nowrap;
     border-right: 1px solid;
-    width: 45ch;
+    width: 61ch;
     
-    animation: typing 2s steps(45), blink .5s infinite step-end alternate;
+    animation: typing 2s steps(61), blink .5s infinite step-end alternate;
     overflow:hidden;
 }
 
@@ -530,6 +530,16 @@ footer {
 
     .overlay i {
         font-size: 20px;
+    }
+
+    .span_animation {
+        display: block;
+        white-space: nowrap;
+        border-right: 1px solid;
+        width: 43ch;
+        
+        animation: typing 2s steps(43), blink .5s infinite step-end alternate;
+        overflow:hidden;
     }
 }
 
