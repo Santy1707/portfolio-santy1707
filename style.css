@@ -14,9 +14,9 @@
     display: block;
     white-space: nowrap;
     border-right: 1px solid;
-    width: 62ch;
+    width: 45ch;
     
-    animation: typing 2s steps(62), blink .5s infinite step-end alternate;
+    animation: typing 2s steps(45), blink .5s infinite step-end alternate;
     overflow:hidden;
 }
 
@@ -49,9 +49,9 @@ section {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 10px;
     font-family: 'Rubik Dirt', cursive;
-    padding: 1rem
+    padding: 0.5rem
 }
 
 .seccion-oscura {
@@ -101,6 +101,13 @@ h1 {
     border-radius: 40px;
 }
 
+.texto-cv-button {
+    font-size: 20px;
+}
+
+.button-cv {
+    width: 250px;
+}
 /*Section Hero*/
 
 .hero-imagen-desarrollador {
