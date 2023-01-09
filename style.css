@@ -10,6 +10,35 @@
     justify-content: space-between;
 }
 
+.span_animation {
+    display: block;
+    white-space: nowrap;
+    border-right: 1px solid;
+    width: 62ch;
+    
+    animation: typing 2s steps(62), blink .5s infinite step-end alternate;
+    overflow:hidden;
+}
+
+.span_animation_subtitle {
+    display: block;
+    white-space: nowrap;
+    border-right: 0.5px solid;
+    width: 30ch;
+    
+    animation: typing 2s steps(30), blink .5s infinite step-end alternate;
+    overflow:hidden;
+}
+
+@keyframes typing {
+    from { width: 0}
+}
+
+@keyframes blink {
+    10% { border-color: transparent}
+}
+
+
 /* Estilos Generales */
 
 section {
@@ -213,7 +242,7 @@ h1 {
   .proyectos-recientes img {
     height: 100%;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     display: block;
     transition: all 0.2s ease;
@@ -235,7 +264,7 @@ h1 {
   }
   
   .overlay p {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 0;
   }
@@ -476,7 +505,7 @@ footer {
 }
 
 
-@media screen and ( max-width: 400px ) {
+@media screen and ( max-width: 1200px ) {
     .overlay p {
         font-size: 15px;
     }
