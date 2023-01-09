@@ -490,7 +490,7 @@ footer {
     }
 
     .testimonio-texto {
-        font-size: 18px;
+        font-size: 12px;
     }
 }
 
@@ -513,8 +513,18 @@ footer {
     .overlay i {
         font-size: 30px;
     }
-
 }
+
+@media screen and ( max-width: 400px ) {
+    .overlay p {
+        font-size: 8px;
+    }
+
+    .overlay i {
+        font-size: 20px;
+    }
+}
+
 
 @media screen and (min-width: 700px) {
     .hero-inferior-imagen {
